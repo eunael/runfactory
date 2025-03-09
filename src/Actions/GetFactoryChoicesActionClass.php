@@ -1,4 +1,5 @@
 <?php
+
 namespace Eunael\RunFactory\Actions;
 
 class GetFactoryChoicesActionClass
@@ -24,17 +25,17 @@ class GetFactoryChoicesActionClass
 
     protected function factoriesChoices($dir = ''): void
     {
-        $factoriesDir = ($dir ?: $this->factoriesDir) . '/';
+        $factoriesDir = ($dir ?: $this->factoriesDir).'/';
 
         $contentDir = array_diff(scandir($factoriesDir), ['.', '..']);
 
         foreach ($contentDir as $content) {
-            if(str_ends_with((string) $content, '.php')) {
+            if (str_ends_with((string) $content, '.php')) {
                 $class = explode('.', (string) $content)[0];
 
                 preg_match(
                     '/(?<=namespace\s).*(?=;\s)/',
-                    file_get_contents($factoriesDir . $content),
+                    file_get_contents($factoriesDir.$content),
                     $matches
                 );
 
@@ -45,7 +46,7 @@ class GetFactoryChoicesActionClass
                 continue;
             }
 
-            $this->factoriesChoices($factoriesDir . $content);
+            $this->factoriesChoices($factoriesDir.$content);
         }
     }
 }

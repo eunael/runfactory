@@ -2,8 +2,8 @@
 
 namespace Eunael\RunFactory;
 
-use Illuminate\Support\ServiceProvider;
 use Eunael\RunFactory\Console\RunFactoryCommand;
+use Illuminate\Support\ServiceProvider;
 
 class RunFactoryServiceProvider extends ServiceProvider
 {
