@@ -12,9 +12,9 @@ use function Laravel\Prompts\text;
 
 class RunFactoryCommand extends Command
 {
-    protected string $factoryName;
+    protected ?string $factoryName;
 
-    protected int $count;
+    protected int $count = 1;
 
     protected $signature = 'factory:run {factory?} {count=1}';
 
@@ -67,7 +67,7 @@ class RunFactoryCommand extends Command
 
     protected function promptForFactoryCount(): void
     {
-        $this->count = (int) text('How many records will be generated?', default: 1);
+        $this->count = (int) text('How many records will be generated?', default: $this->count);
     }
 
     protected function getFactoryInstance(): Factory
