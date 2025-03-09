@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class RunFactoryCommand extends Command
 {
-    protected $signature = 'factory:run {factory}';
+    protected $signature = 'factory:run {factory} {count=1}';
 
     protected $description = 'Run a factory';
 
@@ -14,7 +14,9 @@ class RunFactoryCommand extends Command
     {
         $factoryName = $this->argument('factory');
 
-        $factory = new $factoryName;
+        $count = (int) $this->argument('count');
+
+        $factory = new $factoryName(count: $count);
 
         $factory->create();
     }

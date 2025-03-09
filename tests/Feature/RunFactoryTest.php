@@ -11,3 +11,11 @@ it('runs a factory', function (): void {
 
     expect(User::query()->count())->toBe(1);
 });
+
+it('informs the amount of registration', function (): void {
+    $factoryName = UserFactory::class;
+
+    $this->artisan(RunFactoryCommand::class, ['factory' => $factoryName, 'count' => 5]);
+
+    expect(User::query()->count())->toBe(5);
+});
