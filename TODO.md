@@ -1,0 +1,7 @@
+- [x] Criar comando artisan `factory:run` que recebe o nome da factory
+- [x] Executar um factory criando um registro no banco de dados
+- [x] Fazer aquele campo buscavel no terminal quando não informa a classe da factory
+- [x] Input de count com o valor default 1
+- [x] Criar as versões
+- [x] Escreve a documentação
+- [ ] Adicionar mais opções da factory

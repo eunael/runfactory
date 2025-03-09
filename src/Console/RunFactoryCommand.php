@@ -12,7 +12,7 @@ use function Laravel\Prompts\text;
 
 class RunFactoryCommand extends Command
 {
-    protected ?string $factoryName;
+    protected ?string $factoryName = null;
 
     protected int $count = 1;
 
@@ -77,7 +77,7 @@ class RunFactoryCommand extends Command
 
     protected function successOutput(): void
     {
-        $splitFactoryName = explode('\\', $this->factoryName);
+        $splitFactoryName = explode('\\', (string) $this->factoryName);
         $factoryClassName = str_replace('Factory', '', end($splitFactoryName));
 
         $this->info("{$this->count} {$factoryClassName}'s records were successfully generated.");
