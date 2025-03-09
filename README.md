@@ -3,3 +3,5 @@
 - [ ] Adicionar mais opções da factory
 - [ ] Fazer aquele campo buscavel no terminal quando não informa a classe da factory
 - [ ] Input de count com o valor default 1
+- [ ] Criar as versões
+- [ ] Escreve a documentação

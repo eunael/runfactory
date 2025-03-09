@@ -1,6 +1,6 @@
 <?php
 
-namespace NunoMaduro\SkeletonPhp\Console;
+namespace Eunael\RunFactory\Console;
 
 use Illuminate\Console\Command;
 

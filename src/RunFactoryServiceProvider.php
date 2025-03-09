@@ -1,9 +1,9 @@
 <?php
 
-namespace NunoMaduro\SkeletonPhp;
+namespace Eunael\RunFactory;
 
 use Illuminate\Support\ServiceProvider;
-use NunoMaduro\SkeletonPhp\Console\RunFactoryCommand;
+use Eunael\RunFactory\Console\RunFactoryCommand;
 
 class RunFactoryServiceProvider extends ServiceProvider
 {

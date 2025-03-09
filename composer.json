@@ -56,5 +56,12 @@
             "@test:types",
             "@test:unit"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eunael\\RunFactory\\RunFactoryServiceProvider"
+            ]
+        }
     }
 }

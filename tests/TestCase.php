@@ -2,8 +2,8 @@
 
 namespace Tests;
 
+use Eunael\RunFactory\RunFactoryServiceProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use NunoMaduro\SkeletonPhp\RunFactoryServiceProvider;
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
 
 abstract class TestCase extends TestbenchTestCase

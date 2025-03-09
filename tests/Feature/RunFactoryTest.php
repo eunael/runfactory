@@ -1,6 +1,6 @@
 <?php
 
-use NunoMaduro\SkeletonPhp\Console\RunFactoryCommand;
+use Eunael\RunFactory\Console\RunFactoryCommand;
 use Tests\Factories\UserFactory;
 use Tests\Models\User;
 
