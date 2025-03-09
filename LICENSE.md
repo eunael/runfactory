@@ -19,8 +19,7 @@ copies of the Software, subject to the following conditions:
    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
    DEALINGS IN THE SOFTWARE.
 
-ADDITIONAL RESTRICTIONS:
-
+ADDITIONAL RESTRICTIONS: 
 This software is provided for non-commercial purposes only. Selling or redistributing
 this software, with or without modification, is strictly prohibited without prior written
 permission from the author.
