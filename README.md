@@ -6,20 +6,20 @@ This Laravel package allows you to run your factories via artisan commands.
 
 1. Add the repository in `composer.json`:
 ```
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/eunael/runfactory"
-        }
-    ]
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/eunael/runfactory"
+    }
+]
 ```
-2. Add the package as your development dependency:
+2. Add the package as your **dev dependency**:
 ```
-    "eunael/run-factory": "dev-main"
+"eunael/run-factory": "dev-main"
 ```
 3. Update your dependencies:
 ```
-    composer update
+composer update
 ```
 
 ## Usage
